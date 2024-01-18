@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Klibansky</title> <!--titel tabblad-->
+    <link rel="stylesheet" href="css/main.css"> <!--link naar CSS-->
+    <link rel="icon" href="images/logo.jpg"> <!--logo tabblad-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="includes/script.js"></script> <!--link naar Javascript-->
+</head>
+<body>
+    <!--BEGIN HEADER-->
+      <header id="top">
+    <!--BEGIN MAIN NAVIGATIE-->
+    <div class="navigatie">
+        <nav id="navigatie-desktop">
+            <a href="index.html"><img class='logo-navigatie' src="Images/logo1.jpg" alt="logo"></a>
+            <ul>
+                <a href="#home"><li>home</li></a>
+                <a href="#biography"><li>biography</li></a>
+                <a href="#artwork"><li>artwork</li></a>
+                <a href="#contact"><li>contact</li></a>
+            </ul>
+        </nav>
+    </div>
+    <!--EINDE MAIN NAVIGATIE-->
+    </header>
+    <!--EINDE HEADER-->
+
+    <!--BEGIN CONTENT LANDINGSPAGINA-->
+    <main>
+            <div class="hero">
+                <h1 class="tekst-hero">Joseph Klibansky</h1> <!--GEANIMEERD MET GSAP-->
+            </div>
+            <div class="biography" id="biography">
+                <h2 class="boventitel-artist">Artist biography</h2>
+                <img class="foto-biography"src="images/Joseph klibansky.jpg" alt="Joseph Klibansky"> <!--GEANIMEERD MET GSAP-->
+                <h1 class="titel-artist">Who is Joseph Klibansky?</h1> <!--GEANIMEERD MET GSAP-->
+                <p class="biography">Joseph Klibansky ventures into the territory of phenomenology and revisits matters related to perception that have fascinated philosophers and art historians, and have equally captured the attention of artists. What interests him is the correlation between appearance and that which appears, and the way in which this correlation allows us to understand the relationship between the self and the world. His landscapes annul the concept of a border through which one defines one’s belonging to a place, they end up representing a world-nation in which different identities annul one another by overlapping.</p>
+                <p class="quote-biography">"A thing and its essence" <br> - Joseph Klibansky</p> <!--GEANIMEERD MET GSAP-->
+            </div>
+
+        <div class="artwork-total" id="artwork">
+            <div class="artwork">
+                <h1 class="titel-artwork">Artworks</h1>
+            </div>
+            <div class="row"> <!--GEANIMEERD MET GSAP-->
+                <div class="column">
+                    <div class="container-1">
+                        <div class="overlay">Elements of Love</div>
+                        <img class="img-1" src="images/artwork4.jpg">
+                    </div>
+                    <div class="container-1">
+                        <div class="overlay">Nobody ever made me fall in love like this</div>
+                        <img class="img-2" src="images/artwork5.jpg">
+                    </div>
+                    <div class="container-1">
+                        <div class="overlay">Beyond the Clouds</div>
+                        <img class="img-3" src="images/artwork10.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container-2">
+                        <div class="overlay">Clouds on Fire</div>
+                        <img class="img-4" src="images/artwork6.jpg">
+                    </div>
+                    <div class="container-2">
+                        <div class="overlay">To The Moon and Back</div>
+                        <img class="img-5" src="images/artwork7.jpg">
+                    </div>
+                    <div class="container-2">
+                        <div class="overlay">Into my Heart</div>
+                        <img class="img-6" src="images/artwork8.jpg">
+                    </div>
+                    <div class="container-2">
+                        <div class="overlay">Reflections of Truth</div>
+                        <img class="img-7" src="images/artwork9.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container-3">
+                        <div class="overlay">Beyond the Clouds</div>
+                        <img class="img-8" src="images/artwork1.jpg">
+                    </div>
+                    <div class="container-3">
+                        <div class="overlay">Neon Bare Hug</div>
+                        <img class="img-9" src="images/artwork3.jpg">
+                    </div>
+                    <div class="container-3">
+                        <div class="overlay">Villains In My Head</div>
+                        <img class="img-10" src="images/artwork2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <form action="action_page.php" id="contact">
+            <div class="container">
+                <h1 class="subscribe-title">Subscribe to our newsletter</h1>
+                <p class="subscribe-text">By signing up to our newsletter, you've taken the first step to staying up to date with the latest news, exclusive offers and engaging content!</p>
+            </div>
+            <div class="container" style="background-color:white">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> Weekly newsletter
+                </label>
+            </div>
+            <div class="container">
+            <input type="submit" value="Subscribe">
+            </div>
+        </form>
+    </main>
+    <!--EINDE CONTENT LANDINGSPAGINA-->
+    <!--BEGIN FOOTER-->
+        <div class="footer">
+            <img class="logo-footer" src="Images/logo1.jpg" alt="logo Joseph Klibansky">
+                <ul>
+                    <a class="facebook"><li>Facebook</li></a>
+                    <a class="instagram"><li>Instagram</li></a>
+                    <a class="twitter"><li>Twitter</li></a>
+                    <a class="youtube"><li>Youtube</li></a>
+                    <a class="pinterest"><li>Pinterest</li></a>
+                </ul>
+                <p class="bottom-text">Copyright © 2008-2023 Joseph Klibansky Art Group B.V.</p>
+            <a href="#top"><button  id="scrollToTopBtn" class="naar-boven"><img class="pijl-boven" src="Images/pijl naar boven.png" alt="pijl"></button></a>
+        </div>   
+    <!--EINDE FOOTER-->
+</body>
+    <!--BEGIN SCRIPT-->
+    <script src="https://unpkg.com/split-type"></script> <!--LINK MET GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--LINK MET GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--LINK MET GSAP-->
+<script>
+    //split text
+    const myText = new SplitType('.tekst-hero, .titel-artist, .quote-biography')
+    gsap.to('.char', {
+        y: 0, 
+        stagger: 0.06, 
+        delay: 0.2, 
+        duration: .5 
+    })
+    //scroll trigger
+    gsap.from(".foto-biography", {
+        scrollTrigger: ".foto-biography",
+        x: 300,
+        opacity: 0,
+        delay: 0.5,
+        duration: .6
+    });
+    gsap.from(".img-1", {
+        scrollTrigger: ".img-1",
+        x: -300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-2", {
+        scrollTrigger: ".img-2",
+        x: -300,
+        opacity: 0,
+        delay: 0.2
+    });
+        gsap.from(".img-3", {
+        scrollTrigger: ".img-3",
+        x: -300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-4", {
+        scrollTrigger: ".img-1",
+        y: 300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-5", {
+        scrollTrigger: ".img-2",
+        y: 300,
+        opacity: 0,
+        delay: 0.2
+    });
+        gsap.from(".img-6", {
+        scrollTrigger: ".img-3",
+        y: 300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-7", {
+        scrollTrigger: ".img-3",
+        y: 300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-8", {
+        scrollTrigger: ".img-8",
+        x: 300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-9", {
+        scrollTrigger: ".img-9",
+        x: 300,
+        opacity: 0,
+        delay: 0.3
+    });
+    gsap.from(".img-10", {
+        scrollTrigger: ".img-10",
+        x: 300,
+        opacity: 0,
+        delay: 0.3
+    });
+</script>
+    <!--EINDE SCRIPT-->
+</html>
